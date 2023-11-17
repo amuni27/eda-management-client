@@ -18,11 +18,11 @@ html, body, #main {
 
 .container {
     width: 50%;
-    height: 60%;
     border-radius: 15px;
     background-color: #EDEDED;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     box-shadow: 0 0 20px 1px rgba(58, 58, 58, 0.45);
 }
 
@@ -41,21 +41,22 @@ html, body, #main {
     background-color: #E39595;
 }
 
-.image-con > img{
+.image-con > img {
     width: 80%;
 }
 
 .register-con {
     display: grid;
-    grid-template-rows: 2fr 5fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
 }
-.logo-con{
+
+.logo-con {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    top: 10px;
+    top: 20px;
 }
 
 .form-con {
@@ -161,12 +162,13 @@ html, body, #main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
 
-@media  (max-width: 915px) {
+@media (max-width: 915px) {
     .container {
         width: 85%;
-        height: 95%;
         border-radius: 15px;
         background-color: #EDEDED;
         display: grid;
@@ -174,6 +176,7 @@ html, body, #main {
         grid-template-columns: 1fr;
         box-shadow: 0 0 20px 1px rgba(58, 58, 58, 0.45);
     }
+
     .image-con {
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
