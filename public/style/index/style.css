@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3F3F3;
+}
+
+input:focus {
+    outline: none;
+}
+
+#main {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#side-bar {
+    background-color: white;
+    border-right: 2px solid #eeeeee;
+    height: 100%;
+    box-shadow: 0 0 5px 2px #EEEEEEFF;
+}
+
+#side-bar .side-top {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+#username {
+    color: #7E7979;
+    position: relative;
+    top: -10px;
+}
+
+#user-full-name {
+    color: #E39595;;
+}
+
+#side-bar .side-top div > img {
+    margin-top: 25%;
+    border-radius: 50%;
+    width: 7.813rem;
+    height: 7.813rem;
+}
+
+#side-bar .side-top div > p {
+    font-family: "Segoe UI Light", serif;
+    font-size: 1.125rem;
+
+}
+
+
+#side-bar .side-bottom {
+    height: 75%;
+    width: 100%;
+}
+
+#side-bar .side-bottom > ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#side-bar .side-bottom ul > li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#side-bar .side-bottom ul li > .anchor-normal:hover {
+    background-color: rgba(213, 213, 213, 0.32);
+}
+
+#side-bar .side-bottom ul li > .anchor-normal:active {
+    background-color: rgba(227, 149, 149, 0.32);
+}
+
+#side-bar .side-bottom ul li > .anchor-focused {
+    text-decoration: none;
+    user-select: none;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 0.75rem 2.5rem 0.75rem 9rem;
+    grid-template-areas: "left-margin icon padding link";
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0rem 2rem 0.25rem;
+    color: #B06F6F;
+    background: #ffd7d7;
+    position: relative;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition-property: transform, background, color;
+    transition-duration: 80ms;
+    transition-timing-function: cubic-bezier(0, 0.3, 1, 0.5);
+
+}
+
+#side-bar .side-bottom ul li > .anchor-normal {
+    text-decoration: none;
+    user-select: none;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 0.75rem 2.5rem 0.75rem 9rem;
+    grid-template-areas: "left-margin icon padding link";
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0rem 2rem 0.25rem;
+    color: rgb(102, 102, 102);
+    position: relative;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition-property: transform, background, color;
+    transition-duration: 80ms;
+    transition-timing-function: cubic-bezier(0, 0.3, 1, 0.5);
+
+}
+
+
+#side-bar .side-bottom ul li a > .side-tab-text {
+    grid-area: link;
+    font-family: cash-market-rounded, "Helvetica Neue", helvetica, sans-serif;
+    letter-spacing: 0.01em;
+    font-weight: 530;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#side-bar .side-bottom ul li a > .side-tab-icon {
+    grid-area: icon;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#side-bar .side-bottom ul li a .side-tab-icon > img {
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+
+#side-bar .side-bottom ul li a div > .profile {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.profile {
+    border-radius: 50%;
+}
+
+
+#container {
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#container > div {
+    margin-bottom: 40px;
+}
+
+.rounded-card {
+    background-color: white;
+    border: 2px solid #eeeeee;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 2px #EEEEEEFF;
+}
+
+.shadow {
+    border: 2px solid #eeeeee;
+    box-shadow: 0 0 5px 2px #EEEEEEFF;
+}
+
+.inner-shadow {
+    height: 70%;
+    width: 80%;
+    border: 1px solid #EDEDED;
+    border-radius: 15px;
+}
+
+.left-spacer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.right-spacer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#transaction {
+    height: 732px;
+
+}
+
+#credit-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 198px;
+
+}
+
+.content-head-con {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 0.7fr 10fr 1.5fr 0.1fr 2fr;
+    grid-template-areas: "left-margin searchs  filters  padding sorts";
+    -webkit-box-align: center;
+    align-items: center;
+    font-family: "Segoe UI Light", serif;
+    font-size: 1.5rem;
+}
+
+
+.content-head-con > .search-con {
+    grid-area: searchs;
+    appearance: none;
+    display: block;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 1rem 0px;
+    font-family: inherit;
+    letter-spacing: 0.01em;
+    box-sizing: border-box;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    caret-color: #B06F6F;
+    background-color: rgb(244, 244, 244);
+    width: 100%;
+    color: rgb(51, 51, 51);
+    min-height: 3rem;
+    border-radius: 1.5rem;
+    text-overflow: ellipsis;
+}
+
+.content-head-con .search-con > .search {
+    padding-left: 10px;
+    margin: 0;
+    min-height: 3rem;
+    border: none;
+    background-color: rgb(244, 244, 244);
+    width: 75%;
+    height: 100%;
+    font-family: "Segoe UI Light", serif;
+    font-size: 1.125rem;
+}
+
+.content-head-con .search-con > #search-image {
+    margin-top: 18px;
+}
+
+
+.content-head-con > .search-con:focus {
+    outline: 2px solid #B06F6F;
+}
+
+.content-head-con > .filter {
+    grid-area: filters;
+    margin-left: 1rem;
+    color: #E39595;
+    font-weight: 800;
+}
+
+.content-head-con div > img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.content-head-con > .sort {
+    grid-area: sorts;
+    color: #E39595;
+    font-weight: 800;
+}
+
+#container .credit-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "padding credit-text padding credit-money";
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#container .refundable-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "padding refundable-text padding refundable-money";
+    text-align: center;
+}
+
+
+#container .credit-container-top-text {
+    font-size: 24px;
+    position: relative;
+    top: 25px;
+    color: #E39595;
+    font-family: "Segoe UI Light", serif;
+    font-weight: 600;
+}
+
+#container .credit-container-top-money {
+    font-size: 36px;
+    position: relative;
+    top: 12px;
+    color: rgb(102, 102, 102);
+    font-family: "Segoe UI Light", serif;
+    font-weight: 600;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="public/style/index/style.css">
+</head>
+<body>
+<div id="main">
+    <div id="side-bar">
+        <div class="side-top">
+            <div><img class="shadow" src="./public/image/icon.jpg" alt="profile pic">
+                <p id="user-full-name">Amanuel Lawro</p>
+                <p id="username">@amanuuka</p></div>
+        </div>
+        <div class="side-bottom">
+            <ul>
+                <li><a class="anchor-focused" href="">
+                    <div class="side-tab-icon"><img src="./public/image/icon/credit-focus.png" alt="Credit"></div>
+                    <div class="side-tab-text">Credit</div>
+                </a></li>
+                <li><a class="anchor-normal" href="">
+                    <div class="side-tab-icon"><img src="./public/image/icon/refundable-dark.png" alt="Refundable">
+                    </div>
+                    <div class="side-tab-text">Refundable</div>
+                </a></li>
+                <li><a class="anchor-normal" href="">
+                    <div class="side-tab-icon"><img src="./public/image/icon/transaction-dark.png" alt="Transaction">
+                    </div>
+                    <div class="side-tab-text">Transaction</div>
+                </a></li>
+                <li><a class="anchor-normal" href="">
+                    <div class="side-tab-icon"><img class="profile" src="./public/image/icon.jpg" alt="Account"></div>
+                    <div class="side-tab-text">Account</div>
+                </a></li>
+                <li><a class="anchor-normal" href="">
+                    <div class="side-tab-icon"><img src="./public/image/icon/logout-dark.png" alt="Log out"></div>
+                    <div class="side-tab-text">Log out</div>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="container">
+        <div id="credit-container">
+            <div class="rounded-card right-spacer">
+                <div class="credit-box inner-shadow">
+                    <div><span class="credit-container-top-text">Credit</span></div>
+                    <div><span class="credit-container-top-money">$400</span></div>
+                </div>
+            </div>
+            <div class="rounded-card left-spacer">
+                <div class="refundable-box inner-shadow">
+                    <div><span class="credit-container-top-text">Refundable</span></div>
+                    <div><span class="credit-container-top-money">$400</span></div>
+                </div>
+            </div>
+        </div>
+        <div id="transaction" class="rounded-card">
+            <div class="content-head-con">
+                <div class="search-con"><img id="search-image" src="./public/image/icon/search-none.png" alt=""><input
+                        class="search" type="text" placeholder="Search..."/></div>
+                <div class="filter"><img src="./public/image/icon/filter.png" alt=""> <span>Filter</span></div>
+                <div class="sort"><img src="./public/image/icon/sort.png" alt=""> <span>Sort</span></div>
+            </div>
+            <div class="content-body-con">
+                <table id="">
+                    <thead>
+                    <tr>Payment Reason</tr>
+                    <tr>Reciever</tr>
+                    <tr>Split Amount</tr>
+                    <tr>payees</tr>
+                    <tr>Date</tr>
+                    <tr>Action</tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

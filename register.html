@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="public/style/register/style.css">
+</head>
+<body>
+<div id="main">
+    <div class="container">
+        <div class="image-con">
+            <img src="./public/image/icon/cash.png" alt="">
+        </div>
+        <div class="register-con">
+            <div class="logo-con">
+                <img src="./public/image/icon/cash-logo.png" alt="">
+            </div>
+            <div class="form-con">
+                <form action="http://localhost:3000/api/users/register" method="post">
+                    <div class="input-con">
+                        <img id="firstname" src="./public/image/icon/user.png" alt="">
+                        <input class="input-field" name="firstname" type="text" placeholder="firstname"/>
+                    </div>
+                    <div class="input-con">
+                        <img id="lastname" src="./public/image/icon/user.png" alt="">
+                        <input class="input-field" name="lastname" type="text" placeholder="lastname"/>
+                    </div>
+                    <div class="input-con">
+                        <img id="username" src="./public/image/icon/user.png" alt="">
+                        <input class="input-field" name="username" type="text" placeholder="username"/>
+                    </div>
+                    <div class="input-con">
+                        <img id="password" src="./public/image/icon/password.png" alt="">
+                        <input class="input-field" name="password" type="password" placeholder="password"/>
+                    </div>
+                    <div class="buttons">
+                        <button id="register-btn">Sign up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="signup-con">
+                <p>if you have an account?</p>
+                <a href="./login.html" class="signup-link">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

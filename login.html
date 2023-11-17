@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="public/style/login/style.css">
+</head>
+<body>
+<div id="main">
+    <div class="container">
+        <div class="image-con">
+            <img src="./public/image/icon/cash.png" alt="">
+        </div>
+        <div class="login-con">
+            <div class="logo-con">
+                <img src="./public/image/icon/cash-logo.png" alt="">
+            </div>
+            <div class="form-con">
+                <form action="http://localhost:3000/api/users/login" method="post">
+                    <div class="input-con">
+                        <img id="username" src="./public/image/icon/user.png" alt="">
+                        <input class="input-field" name="username" type="text" placeholder="username"/>
+                    </div>
+                    <div class="input-con">
+                        <img id="password" src="./public/image/icon/password.png" alt="">
+                        <input class="input-field" name="password" type="password" placeholder="password"/>
+                    </div>
+                    <div class="buttons">
+                        <button id="login-btn">Login</button>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="signup-con">
+                <p>Don't have an account?</p>
+                <a href="./register.html" class="signup-link">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

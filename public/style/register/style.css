@@ -1,0 +1,182 @@
+body, h1, h2, h3, p, span, div, nav, ul, li, ol {
+    padding: 0;
+    margin: 0;
+}
+
+html, body, #main {
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #a97070;
+}
+
+.container {
+    width: 50%;
+    height: 60%;
+    border-radius: 15px;
+    background-color: #EDEDED;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 0 20px 1px rgba(58, 58, 58, 0.45);
+}
+
+.container > div {
+    width: 100%;
+    height: 100%;
+}
+
+.image-con {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: #E39595;
+}
+
+.image-con > img{
+    width: 80%;
+}
+
+.register-con {
+    display: grid;
+    grid-template-rows: 2fr 5fr 1fr;
+}
+.logo-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+
+.form-con {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-con div {
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.input-con {
+    appearance: none;
+    display: block;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 1rem 0px;
+    font-family: inherit;
+    letter-spacing: 0.01em;
+    box-sizing: border-box;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    caret-color: #B06F6F;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    color: rgb(51, 51, 51);
+    min-height: 3rem;
+    border-radius: 1.5rem;
+    text-overflow: ellipsis;
+}
+
+.input-con:focus {
+    outline: 2px solid #B06F6F;
+}
+
+.input-con > img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.input-field {
+    padding-left: 10px;
+    margin: 0;
+    min-height: 3rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+    height: 100%;
+    font-family: "Segoe UI Light", serif;
+    font-size: 1.125rem;
+}
+
+.input-field:focus {
+    outline: 0.5px solid #ffffff;
+}
+
+#register-btn:active {
+    outline: 1px solid #a97070;
+}
+
+#register-btn:hover {
+    background-color: #953c3c; /* Adjust the color to your preference */
+}
+
+/* Add these styles for the new elements */
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#register-btn {
+    padding-left: 10px;
+    margin: 0;
+    min-height: 3rem;
+    border: 1px solid #d08a8a;
+    border-radius: 15px;
+    background-color: #B06F6F;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-family: "Segoe UI Light", serif;
+    font-size: 1.125rem;
+}
+
+.forgot-password,
+.signup-link {
+    text-decoration: none;
+    color: #B06F6F;
+    margin-top: 10px;
+    display: block;
+}
+
+.signup-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media  (max-width: 915px) {
+    .container {
+        width: 85%;
+        height: 95%;
+        border-radius: 15px;
+        background-color: #EDEDED;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        box-shadow: 0 0 20px 1px rgba(58, 58, 58, 0.45);
+    }
+    .image-con {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+}
