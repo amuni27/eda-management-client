@@ -165,8 +165,7 @@ html, body, #main {
 
 @media  (max-width: 915px) {
     .container {
-        width: 85%;
-        height: 95%;
+        width: 90%;
         border-radius: 15px;
         background-color: #EDEDED;
         display: grid;
