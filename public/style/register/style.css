@@ -168,18 +168,20 @@ html, body, #main {
 
 @media (max-width: 915px) {
     .container {
-        width: 85%;
+        width: 95%;
         border-radius: 15px;
         background-color: #EDEDED;
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr;
         box-shadow: 0 0 20px 1px rgba(58, 58, 58, 0.45);
     }
 
     .image-con {
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 0;
+        height: 0;
+    }
+
+    .container .image-con > img {
+        height: 0;
     }
 }
